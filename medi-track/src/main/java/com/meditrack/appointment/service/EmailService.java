@@ -1,0 +1,13 @@
+package com.meditrack.appointment.service;
+
+public interface EmailService {
+    void sendEmail(String toEmail, String subject, String body);
+    
+    void sendAppointmentConfirmation(String toEmail, String patientName, String doctorName, String date, String time);
+    
+    void sendAppointmentCancellation(String toEmail, String patientName, String doctorName, String date, String time);
+    
+    void sendAppointmentReschedule(String toEmail, String patientName, String doctorName, String newDate, String newTime);
+  
+
+}
